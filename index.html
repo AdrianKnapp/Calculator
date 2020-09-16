@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form name="form">
+                <input autocomplete="off" class="textview" name="campo" onkeypress="return onlynumber();" placeholder="..." maxlength="50">
+            </form>
+
+            <div class="line">
+                <input type="button" value="C" class="botao" onclick="clean()">
+                <input type="button" value="<" class="botao" onclick="back()">
+                <input type="button" value="/" class="botao" onclick="insert('/')">
+                <input type="button" value="x" class="botao"
+                onclick="insert('*')">
+            </div>
+
+            <div class="line">
+                 <input type="button" value="7" class="botao" id="numero" onclick="insert(7)">
+                <input type="button" value="8" class="botao" id="numero" onclick="insert(8)">
+                <input type="button" value="9" class="botao" id="numero" onclick="insert(9)">
+                <input type="button" value="-" class="botao" id="numero" onclick="insert('-')">
+            </div>
+
+            <div class="line">
+                <input type="button" value="4" class="botao" id="numero" onclick="insert(4)">
+                <input type="button" value="5" class="botao" id="numero" onclick="insert(5)">
+                <input type="button" value="6" class="botao" id="numero" onclick="insert(6)">
+                <input type="button" value="+" class="botao" id="numero" onclick="insert('+')">
+            </div>
+
+            <div class="line">
+                <input type="button" value="1" class="botao" id="numero" onclick="insert(1)">
+                <input type="button" value="2" class="botao" id="numero" onclick="insert(2)">
+                <input type="button" value="3" class="botao"id="numero" onclick="insert(3)" >
+                <input type="button" value="%"  class="botao" id="numero" onclick="insert('%')">
+
+            </div>
+
+            <div class="down">
+                <input type="button" value="." class="botao" onclick="insert('.')">
+                <input type="button" value="0" class="botao"
+                onclick="insert(0)">
+                <input type="button" value="=" class="igual" onclick="calc()">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
